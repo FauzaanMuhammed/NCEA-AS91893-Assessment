@@ -4,4 +4,10 @@
     position:absolute; /*Makes the image use up no whitespace, as it has 0px left/top. This makes the image neater*/
     left:0px;
     top:0px;
+    z-index:-1; /*Makes other smaller images appear over this one, so they aren't overlapped*/
+}
+
+.header_image{
+    width:29.34vw;
+    margin-left:2vw;
 }
