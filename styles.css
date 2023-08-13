@@ -1,0 +1,7 @@
+.home_page_image{
+    width:100vw;
+    height:100vh;
+    position:absolute; /*Makes the image use up no whitespace, as it has 0px left/top. This makes the image neater*/
+    left:0px;
+    top:0px;
+}
