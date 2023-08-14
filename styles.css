@@ -9,5 +9,18 @@
 
 .header_image{
     width:29.34vw;
-    margin-left:2vw;
+    margin-left:1.5vw;
+    position: absolute;
+    top:-5px;
+}
+.header_links{
+    margin-left:32vw;
+    margin-top:2vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.header_links a{
+    color:white;
+    font-size:3vw;
+    padding-left:1.5vw;
+    padding-right:1.5vw;
 }
