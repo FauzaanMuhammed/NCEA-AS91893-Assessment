@@ -5,22 +5,23 @@
     left:0px;
     top:0px;
     z-index:-1; /*Makes other smaller images appear over this one, so they aren't overlapped*/
+    opacity:80%; /*allows the logo to be seen more clearly*/
 }
 
-.header_image{
-    width:29.34vw;
-    margin-left:1.5vw;
+.logo_image{
+    width:69.34vw;
     position: absolute;
-    top:-5px;
+    top:25%;
+    left:16%;
 }
 .header_links{
-    margin-left:32vw;
+    margin-left:20vw;
     margin-top:2vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .header_links a{
     color:white;
     font-size:3vw;
-    padding-left:1.5vw;
-    padding-right:1.5vw;
+    padding-left:3vw;
+    padding-right:3vw;
 }
