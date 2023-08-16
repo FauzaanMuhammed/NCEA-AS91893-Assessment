@@ -40,7 +40,6 @@ body{
     top:0px;
     z-index:-1; /*Makes other smaller images appear over this one, so they aren't overlapped*/
     opacity:70%; /*allows the logo to be seen more clearly*/
-    opacity:80%; /*allows the logo to be seen more clearly*/
 }
 
 .logo_image{
