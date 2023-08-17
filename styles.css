@@ -1,6 +1,8 @@
 body{
-    overflow-x:hidden; /*Hides horizontal scrollbar*/
     background-color: whitesmoke;
+}
+html{
+    overflow-x:hidden; /*hides the horizontal scrollbar*/
 }
 ::-webkit-scrollbar {
     width: 8px;        /* Make the scrollbar length 8 pixels */
@@ -79,16 +81,38 @@ top:52vh;
 } 
 
 .about_us{
-    margin-top:45vw
+    margin-top:96vh;
 }
-.about_us_intro_box{
+.intro_box{
     margin-left:38vw;
     width:20vw;
     height:10vh;
     background-color:#affaff;
     box-shadow:0.3vw 0.3vw black;
     border:3px solid black;
-    font-weight:bold;
+    font-weight:900;
     font-size:4vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info{
+    display:flex;
+    margin-top:5vw;
+    margin-left:10vw;
+    width:100%;
+    gap:6.9vw;
+}
+.boxed_info{
+    border:4px solid black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2.69vw;
+    width:35%;
+    background-color:#bceaff;
+    height:28.69vw;
+    padding:10px;
+}
+.chalet_info{
+    margin-left:5vw;
+    display: flex;
+    width:100%;
+    gap:6.9vw;
 }
