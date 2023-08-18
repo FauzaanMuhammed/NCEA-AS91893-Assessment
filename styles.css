@@ -18,7 +18,7 @@ h1{
 }
 
 .header_links{
-    margin-left:20vw;
+    margin-left:2vw;
     margin-top:2vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -103,19 +103,22 @@ top:52vh;
 .info{
     display:flex;
     margin-top:6.9vh;
-    margin-left:10vw;
-    margin-bottom:5vh;
-    width:100%;
-    gap:6.9vw;
+    margin-bottom:15vh;
+    width:101%;
+    gap:2vw;
     text-align: center;
+    margin-left:0.8vw;
+}
+.info img{
+    height:19vw;
 }
 .boxed_info{
     border:0.75vw solid black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:2.5vw;
-    width:35%;
+    font-size:2vw;
+    width: 30%;
     background-color:#bceaff;
-    height:41vw;
+    height:37vw;
 }
 .about_us_image{ 
     width:100%;
@@ -128,23 +131,42 @@ top:52vh;
     font-weight: 900;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.chalet_box{
-    border:0.75vw solid black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:2.1vw;
-    width:25%;
-    background-color:#bceaff;
-    height:45.69vw;
-    text-align: center;
-}
 .chalet_info{
     margin-top:6.9vh;
-    margin-left:2.5vw;
     display: flex;
     width:120%;
     gap:1vw;
 }
+.chalet_box{
+    border:0.75vw solid black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.61vw;
+    width:26%;
+    background-color:#bceaff;
+    height:33.69vw;
+    text-align: center;
+}
+.chalet_box p{
+    margin:0.1em;
+}
+.chalet_box img{
+    height:20vw;
+}
 .gallery_image{
     width:50vw;
+    height:30vw;
     border:1vw solid black;
+}
+.side_gallery_image{
+    width:20vw;
+    height:12vw;
+    opacity:70%;
+    border:0.4vw solid black;
+}
+.membership_form{
+    border:2vw solid black;
+    width:50%;
+    height:70vw;
+    margin-left:22%;
+    background-color:#affaff;
 }
