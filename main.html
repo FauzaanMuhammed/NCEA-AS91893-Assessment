@@ -2,6 +2,7 @@
 <html>
    <head>
        <link rel="stylesheet" href="styles.css">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
        <title>Maunga club website</title>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
        <meta charset="UTF-8">
@@ -72,11 +73,43 @@
             <img src="Maunga Images/Maunga Club Images/kereru/adult_bedroom.jpg" class="side_gallery_image" id="img2">
         </div>
         <div class="intro_box" id="membership">Membership</div>
-        <div class="membership_form">
 
+        <div class="membership_form">
+            <div class="login_section">
+                <b>Full Name</b>
+                <input id="full_name">
+            </div>
+
+            <div class="login_section">
+                <b>Address</b>
+                <input id="address">
+            </div>
+
+            <div class="login_section">
+                <b>Proof of Adress</b>
+                <input type="file" id="address_proof">
+            </div>
+
+            <div class="login_section" style="padding-bottom:0vw;">
+                <b>Proof of ID</b>
+                <input type="file" id="id_proof">
+            </div>
+            <div class="login_section">
+                <button class="membership_sub_button">Submit</button>
+            </div>
+            
         </div>
 
         <script>
+
+    $(document).on('click', 'a[href^="#"]', function (event) { /*function for smooth link jumping*/
+        event.preventDefault(); 
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top 
+            }, 500);
+        });   
+
+            
            img_src_list=["Maunga Images/Maunga Club Images/maunga_club_cabin.jpg","Maunga Images/Maunga Club Images/pukeko/bathroom.jpg","Maunga Images/Maunga Club Images/kereru/adult_bedroom.jpg",
            "Maunga Images/Maunga Club Images/kereru/kids_bedroom.jpg","Maunga Images/Maunga Club Images/kereru/kitchen.jpg","Maunga Images/Maunga Club Images/kakapo/hallway.jpg"]
         x=0    
@@ -91,6 +124,17 @@
             if(x+1==img_src_list.length){$("#img2").attr("src",img_src_list[0])}
             else{$("#img2").attr("src",img_src_list[x+1])}
         }, 3000);
+
+        $(".membership_sub_button").on("click",function(){
+            error_string="" /*This will be tracking the errors if an input is empty, and if nothing is added to it, it will stay empty.*/
+            if($("#full_name").val()==""){error_string+="Full name needs to have info\n"}
+            if($("#address").val()==""){error_string+="Address needs to have info\n"} /*e.g if The adress input is empty, add a message onto error_string*/
+            if($("#address_proof").val()==""){error_string+="Address Proof needs to have info\n"}
+            if($("#id_proof").val()==""){error_string+="ID proof needs to have info"}
+
+            if(error_string==""){ alert("Information sent to maungaclub@maungaclub.maungaclub")} /*if no errors, alert that the information has been sent*/
+            else{alert(error_string)}/*otherwise, notify the people*/
+        })
         </script>
    </body>
 </html>
