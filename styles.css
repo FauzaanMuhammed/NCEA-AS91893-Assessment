@@ -166,7 +166,31 @@ top:52vh;
 .membership_form{
     border:2vw solid black;
     width:50%;
-    height:70vw;
+    height:42vw;
     margin-left:22%;
     background-color:#affaff;
 }
+.login_section{
+    font-size: 2.5vw;
+    font-family:"Audiowide";
+    padding:3vw 1vw;;
+}
+.login_section input{
+    border:0.5vw solid black;
+    font-weight:bolder;
+    font-size:1.5vw;
+    width:33%;
+    float:right;
+}
+.membership_sub_button{
+    border:0.5vw solid black;
+    font-weight:bolder;
+    font-size:2vw;
+    width:15vw;
+    margin-left:30%;
+}
+.membership_sub_button:hover{
+    cursor:pointer;
+    background-color:rgb(219, 219, 219);
+}
+
