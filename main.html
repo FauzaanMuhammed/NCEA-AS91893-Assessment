@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
    <head>
-       <link rel="stylesheet" href="styles.css">
-       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+       <link rel="stylesheet" href="styles.css"><!--Links to styles.css, and makes the code look more neat-->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"><!--This is a custom google font that will be used for the membership form text-->
        <title>Maunga club website</title>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-       <meta charset="UTF-8">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!--This is the Script source for jquery, which will be used later for gallery and forms-->
+       <meta charset="UTF-8"><!--defines the character set that will be used, which is UTF-8.-->
    </head>
 
-   <header>
+   <header> 
         <img src="Maunga Images/Maunga Club Images/Maunga_Club_white.png" class="logo_image" alt="Maunga club logo image">
-        <div class="header_links" style="margin-left:10vw;">
+        <div class="header_links" style="margin-left:10vw;"><!--Margin-left Moves the link to the center of the header-->
                <a href="#about_us">About us</a>
                <a href="#chalet_info">Chalets</a>
                <a href="#gallery">Gallery</a>
@@ -20,46 +20,45 @@
    <body>
         <img src="Maunga Images/Maunga Club Images/mountain_view_light.jpg" class="home_page_image" alt="Mountain view onto snow">
         <p class="quote">"See you at the winter wonderland!"</p>
-
         <div class="about_us" id="about_us">
             <div class="intro_box">About us</div>
         </div>
         <div class="info">
             <div class="boxed_info">
                 <h1>Skiing</h1>
-                <img src="Maunga Images/Maunga Club Images/kakapo/cabin_view.jpg" class="about_us_image">
-                We have <a class="ski_kilometers" style="text-decoration: underline;">5.5 square kilometers</a> of skiing and snowboarding area, the largest in New Zealand.
+                <img src="Maunga Images/Maunga Club Images/kakapo/cabin_view.jpg" class="about_us_image" alt="Kakapo Cabin View">
+                We have <span class="ski_kilometers" style="text-decoration: underline;font-weight: 900;">5.5 square kilometers</span> of skiing and snowboarding area, the largest in New Zealand.
             </div>
             
             <div class="boxed_info">
                 <h1> Chalets</h1>
-                <img src="Maunga Images/Maunga Club Images/kakapo/bunk_room.jpg" class="about_us_image">
+                <img src="Maunga Images/Maunga Club Images/kakapo/bunk_room.jpg" class="about_us_image" alt="kakapo cabin bunk room">
                 Our club include 3 <a href="#chalet_info" style="color:black;font-weight:900;">chalets</a> for you to stay in, which are all right next to the skiing and snowboarding mountains. 
             </div>
 
             <div class="boxed_info">
                 <h1>Membership</h1>
-                <img src="Maunga Images/Maunga Club Images/maunga_club_cabin.jpg" class="about_us_image">
-                We have a very simple <a href="balls" style="color:black;font-weight:900;">membership</a> process. Members are able to book the chalets from Friday to Sunday. 
+                <img src="Maunga Images/Maunga Club Images/maunga_club_cabin.jpg" class="about_us_image" alt="cabin with christmas decorations">
+                We have a very simple <a href="#membership" style="color:black;font-weight:900;">membership</a> process. Members are able to book the chalets from Friday to Sunday. 
             </div>
         
         </div>
         <div class="intro_box" id="chalet_info"> Chalets</div>
         <div class="chalet_info">
             <div class="chalet_box">
-                <img src="Maunga Images/Maunga Club Images/kakapo/cabin2.png" width="100%"style="border-bottom:0.5vw solid black;">
+                <img src="Maunga Images/Maunga Club Images/kakapo/cabin2.png" width="100%"style="border-bottom:0.5vw solid black;" alt="Large kakapo cabin">
                 <b class="chalet_heading">KAKAPO</b>
                 <p>The gargantuan of all the chalets, accomodating up to 30 children and 10 adults. It has a large dining room and living area, as well as hospitable services.</p>
             </div>
 
             <div class="chalet_box">
-                <img src="Maunga Images/Maunga Club Images/kereru/cabin_exterior.jpg" width="100%" style="border-bottom:0.5vw solid black;">
+                <img src="Maunga Images/Maunga Club Images/kereru/cabin_exterior.jpg" width="100%" style="border-bottom:0.5vw solid black;" alt="snowy exterior of kereru cabin">
                 <b class="chalet_heading">KERERU</b>
                 <p>Caters up to 21 people; strictly a maximum of 6 adults and 15 kids. Great for multiple families or groups wanting a Chalet for themselves.</p>
             </div>
 
             <div class="chalet_box">
-                <img src="Maunga Images/Maunga Club Images/pukeko/chalet_exterior.jpg" width="100%" style="border-bottom:0.5vw solid black;">
+                <img src="Maunga Images/Maunga Club Images/pukeko/chalet_exterior.jpg" width="100%" style="border-bottom:0.5vw solid black;" alt="exterior of pukeko cabin, right next to snowboarding/skiing range.">
                 <b class="chalet_heading">PUKEKO</b>
                 <p>Caters up to 6 people, up to 4 kids and 2 parents. The best option for a single family. Contains 2 bedrooms, and a seperate living room.</p>
             </div>
@@ -108,21 +107,33 @@
             scrollTop: $($.attr(this, 'href')).offset().top 
             }, 500);
         });   
-
+            $(".ski_kilometers").on("mouseover",function(){
+                $(".ski_kilometers").text("3.4 square miles")
+            })
+            $(".ski_kilometers").on("mouseout",function(){
+                $(".ski_kilometers").text("5.5 square kilometers")
+            })
             
            img_src_list=["Maunga Images/Maunga Club Images/maunga_club_cabin.jpg","Maunga Images/Maunga Club Images/pukeko/bathroom.jpg","Maunga Images/Maunga Club Images/kereru/adult_bedroom.jpg",
            "Maunga Images/Maunga Club Images/kereru/kids_bedroom.jpg","Maunga Images/Maunga Club Images/kereru/kitchen.jpg","Maunga Images/Maunga Club Images/kakapo/hallway.jpg"]
-        x=0    
-        setInterval(function() {
-            if (x+1<img_src_list.length){x+=1}
-            else{x=0}
-            $(".gallery_image").attr("src",img_src_list[x])
 
-            if (x==0){$("#img1").attr("src",img_src_list[img_src_list.length-1])}
-            else{$("#img1").attr("src",img_src_list[x-1])}
+           img_alt_list=["Club cabin with christmas decorations","Club bathroom","Kereru cabin adult bedroom","Kereru cabin kids bedroom","Club kitchen","Kakapo cabin hallway"]
+            x=0    /*x is the counter, and will dictate what images appear*/
+        setInterval(function() { /*A setInterval function fires 1 time every specific milliseconds. In this case, it is 3000, or 3 seconds, as defined in line 132*/
+            if (x+1<img_src_list.length){x+=1}/*If x is NOT greater than the list length, increase it, as the number is still within the list_length*/
+            else{x=0}/*otherwise, reset x to 0*/
+            $(".gallery_image").attr("src",img_src_list[x]) /*after these changes have been done, change the gallery image to xth index of the array, including the alt as well*/
+            $(".gallery_image").attr("alt",img_alt_list[x])
+                    /*img 1 is the smaller faded image that appears to the left to the gallery images*/
+            if (x==0){$("#img1").attr("src",img_src_list[img_src_list.length-1]) /*If x is 0, display the last image on the array, along with it's alt.*/
+            $("#img1").attr("alt",img_alt_list[img_alt_list.length-1])} 
 
-            if(x+1==img_src_list.length){$("#img2").attr("src",img_src_list[0])}
-            else{$("#img2").attr("src",img_src_list[x+1])}
+            else{$("#img1").attr("src",img_src_list[x-1]);$(".gallery_image").attr("alt",img_alt_list[x-1])} /*Otherwise, display the image the gallery image was previously*/
+            /*Changes #img2 the smaller image to the right of the gallery images*/
+            if(x+1==img_src_list.length){$("#img2").attr("src",img_src_list[0]) /*if x is greater than the list length, display the first image of the array.*/ 
+                                         $("#img2").attr("alt",img_alt_list[0])}
+            else{$("#img2").attr("src",img_src_list[x+1])  /*otherwise, display the image the gallery image will become next.*/
+                 $("#img2").attr("alt",img_alt_list[x+1])}
         }, 3000);
 
         $(".membership_sub_button").on("click",function(){
@@ -135,6 +146,19 @@
             if(error_string==""){ alert("Information sent to maungaclub@maungaclub.maungaclub")} /*if no errors, alert that the information has been sent*/
             else{alert(error_string)}/*otherwise, notify the people*/
         })
+        
+        $(".header_links").on("mouseover",function(){
+            $(".header_links").css("opacity","100%")   /*When hovered over, makes the header visible*/
+        })
+        $(".header_links").on("mouseout",function(){ /*When the mouse leaves it, make it fade out*/
+            $(".header_links").css("opacity","0%")
+        })
+        
+        $("body").on("mouseenter",function(){
+            $(".header_links").css("opacity","0%") /*Makes the header invisible when mouse is moved, to make the experience less instrusive.*/
+        })
+            
+        
         </script>
    </body>
 </html>
