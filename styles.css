@@ -14,38 +14,43 @@ html{
     background: #ffffff;
 }
 h1{
-    margin:1vw;
+    margin:0vw;
+    font-size:5vw;
 }
 .header_links{
     margin-left:2vw;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:monospace;
     border-bottom:1vw solid black;
     border-left:1vw solid black;
     border-right:1vw solid black;
-    background-color:lightblue;
+    background-color:rgb(183, 222, 236);
     margin-right:1vw;
     position: fixed; /*fixed, so it stays in the webite no matter how far the user has scrolled.*/
     top:0;
-    left:1vw;
-    transition: 0.3s;/*used to make the fade-out animation smooth*/
+    left:8vw;
+    z-index:69420;
+    opacity:75%;
+    transition:200ms;
 }
 .header_links:hover{
-    transition: 0.3s; /*used to make the fade-in animation smooth*/
+    opacity:100%;
+    transition:200ms;
 }
 .header_links a{
-    color:white;
-    font-size:3rem;
-    padding-left:3vw;
-    padding-right:3vw;
+    color:black;
+    font-size:2.5vw;
+    padding-left:1vw;
+    padding-right:1vw;
     text-decoration: none;
-    text-shadow:2px 2px 3px black;
-    transition:200ms;
+    margin-left:3vw;
+    margin-right:3vw;
+    transition: 200ms;
 }
 
 
 .header_links a:hover{  
-    text-shadow:0px 0px black;
-    
+    text-shadow:1px 1px 1px black;
+    transition: 200ms;
 }
 
 .home_page_image{
@@ -59,28 +64,19 @@ h1{
 }
 
 .logo_image{
-    width:57.34vw;
+    width:calc(47vw + 10vh);
+    height:calc(15vw + 5vh);
     position: absolute; /*Positon absolute is used to accurately place the logo image*/
     top:25%;
     left:20%;
 }
 
-.header_links a{
-    color:white;
-    font-size:3vw;
-    padding-left:3vw;
-    padding-right:3vw;
-    text-decoration: none;
-    text-shadow:2px 2px 3px black;
-    transition:200ms;
-}
-
 .quote{
-color:rgb(53, 53, 53);
-font-size:3.5vw;
+color:rgb(0, 0, 0);
+font-size:calc(2.5vw + 1vh);
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 position:absolute;
-left:25vw;
+left:23vw;
 top:52vh;
 } 
 
@@ -103,12 +99,11 @@ top:52vh;
 }
 .info{
     display:flex;
-    margin-top:6.9vh;
+    margin-top:4vh;
     margin-bottom:15vh;
     width:101%;
     gap:2vw;
     text-align: center;
-    margin-left:0.8vw;
 }
 .info img{
     height:19vw;
@@ -116,10 +111,10 @@ top:52vh;
 .boxed_info{
     border:0.75vw solid black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:2vw;
+    font-size:calc(1.5vw + 1.5vh);
     width: 30%;
     background-color:#bceaff;
-    height:37vw;
+    height:calc(22vw + 33vh);
 }
 .about_us_image{ 
     width:100%;
@@ -141,10 +136,10 @@ top:52vh;
 .chalet_box{
     border:0.75vw solid black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:1.61vw;
+    font-size:calc(1.5vw + 1.5vh);
     width:26%;
     background-color:#bceaff;
-    height:33.69vw;
+    height:calc(25vw + 36vh);
     text-align: center;
 }
 .chalet_box p{
@@ -166,20 +161,20 @@ top:52vh;
 }
 .membership_form{
     border:2vw solid black;
-    width:50%;
-    height:42vw;
-    margin-left:22%;
+    width:65%;
+    height:calc(40vw + 20vh);
+    margin-left:15%;
     background-color:#affaff;
 }
 .login_section{
-    font-size: 2.5vw;
+    font-size:calc(2.8vw + 0.9vh);
     font-family:"Audiowide";
     padding:3vw 1vw;;
 }
 .login_section input{
     border:0.5vw solid black;
     font-weight:bolder;
-    font-size:1.5vw;
+    font-size:calc(2.4vw + 0.2vh);
     width:33%;
     float:right;
 }
@@ -187,7 +182,8 @@ top:52vh;
     border:0.5vw solid black;
     font-weight:bolder;
     font-size:2vw;
-    width:15vw;
+    width:calc(17vw + 5vh);
+    height:calc(3vw + 1vh);
     margin-left:30%;
 }
 .membership_sub_button:hover{

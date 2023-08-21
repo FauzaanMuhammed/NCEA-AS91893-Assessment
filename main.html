@@ -10,7 +10,7 @@
 
    <header> 
         <img src="Maunga Images/Maunga Club Images/Maunga_Club_white.png" class="logo_image" alt="Maunga club logo image">
-        <div class="header_links" style="margin-left:10vw;"><!--Margin-left Moves the link to the center of the header-->
+        <div class="header_links"><!--Margin-left Moves the link to the center of the header-->
                <a href="#about_us">About us</a>
                <a href="#chalet_info">Chalets</a>
                <a href="#gallery">Gallery</a>
@@ -100,13 +100,14 @@
         </div>
 
         <script>
-
-    $(document).on('click', 'a[href^="#"]', function (event) { /*function for smooth link jumping*/
-        event.preventDefault(); 
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top 
-            }, 500);
-        });   
+    /*function for smooth link jumping, whenever the user clicks a link.*/
+            $(document).on('click', 'a[href^="#"]', function (event) { 
+                event.preventDefault(); 
+                    $('html, body').animate({
+                     scrollTop: $($.attr(this, 'href')).offset().top 
+                 }, 900,"linear");
+            });   
+           /*This will make the 5.5 kilometers turn into 3.4 miles when hovered over.*/
             $(".ski_kilometers").on("mouseover",function(){
                 $(".ski_kilometers").text("3.4 square miles")
             })
@@ -145,17 +146,6 @@
 
             if(error_string==""){ alert("Information sent to maungaclub@maungaclub.maungaclub")} /*if no errors, alert that the information has been sent*/
             else{alert(error_string)}/*otherwise, notify the people*/
-        })
-        
-        $(".header_links").on("mouseover",function(){
-            $(".header_links").css("opacity","100%")   /*When hovered over, makes the header visible*/
-        })
-        $(".header_links").on("mouseout",function(){ /*When the mouse leaves it, make it fade out*/
-            $(".header_links").css("opacity","0%")
-        })
-        
-        $("body").on("mouseenter",function(){
-            $(".header_links").css("opacity","0%") /*Makes the header invisible when mouse is moved, to make the experience less instrusive.*/
         })
             
         
