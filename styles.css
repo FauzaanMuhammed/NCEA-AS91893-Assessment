@@ -15,30 +15,29 @@ html{
 }
 h1{
     margin:0vw;
-    font-size:5vw;
+    font-size:4vw;
 }
 .header_links{
     margin-left:2vw;
     font-family:monospace;
-    border-bottom:1vw solid black;
-    border-left:1vw solid black;
-    border-right:1vw solid black;
-    background-color:rgb(183, 222, 236);
+    border-bottom:0.75vw solid black;
+    border-left:0.75vw solid black;
+    border-right:0.75vw solid black;
+    background-color:rgb(172, 219, 236);
     margin-right:1vw;
     position: fixed; /*fixed, so it stays in the webite no matter how far the user has scrolled.*/
     top:0;
-    left:8vw;
+    left:16.9vw;
     z-index:69420;
-    opacity:75%;
     transition:200ms;
 }
 .header_links:hover{
-    opacity:100%;
+    background-color:rgb(140, 208, 233);
     transition:200ms;
 }
 .header_links a{
     color:black;
-    font-size:2.5vw;
+    font-size:calc(1.15vw + 0.5vh);
     padding-left:1vw;
     padding-right:1vw;
     text-decoration: none;
@@ -68,15 +67,15 @@ h1{
     height:calc(15vw + 5vh);
     position: absolute; /*Positon absolute is used to accurately place the logo image*/
     top:25%;
-    left:20%;
+    left:24%;
 }
 
 .quote{
 color:rgb(0, 0, 0);
-font-size:calc(2.5vw + 1vh);
+font-size:calc(3vw + 0.5vh);
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 position:absolute;
-left:23vw;
+left:26.5vw;
 top:52vh;
 } 
 
@@ -106,15 +105,15 @@ top:52vh;
     text-align: center;
 }
 .info img{
-    height:19vw;
+    height:17vw;
 }
 .boxed_info{
     border:0.75vw solid black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:calc(1.5vw + 1.5vh);
+    font-size:calc(1.3vw + 1.3vh);
     width: 30%;
     background-color:#bceaff;
-    height:calc(22vw + 33vh);
+    height:calc(22vw + 25vh);
 }
 .about_us_image{ 
     width:100%;
@@ -122,8 +121,11 @@ top:52vh;
     border-top:0.75vw solid black;
     border-bottom:0.75vw solid black;
 }
+.ski_kilometers:hover{
+    font-size:calc(2vw + 1.4vh);
+}
 .chalet_heading{
-    font-size:3.69vw;
+    font-size:calc(3vw + 0.3vh);
     font-weight: 900;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -136,21 +138,23 @@ top:52vh;
 .chalet_box{
     border:0.75vw solid black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:calc(1.5vw + 1.5vh);
+    font-size:calc(1.15vw + 1.1vh);
     width:26%;
     background-color:#bceaff;
-    height:calc(25vw + 36vh);
+    height:calc(22vw + 23vh);
     text-align: center;
 }
 .chalet_box p{
     margin:0.1em;
 }
 .chalet_box img{
-    height:20vw;
+    height:18vw;
+    border-bottom:1vw solid black;
+    width:100%;
 }
 .gallery_image{
-    width:50vw;
-    height:30vw;
+    width:calc(43vw + 5vh);
+    height:calc(28vw + 5vh);
     border:1vw solid black;
 }
 .side_gallery_image{
@@ -162,14 +166,14 @@ top:52vh;
 .membership_form{
     border:2vw solid black;
     width:65%;
-    height:calc(40vw + 20vh);
+    height:calc(30vw + 20vh);
     margin-left:15%;
     background-color:#affaff;
 }
 .login_section{
-    font-size:calc(2.8vw + 0.9vh);
+    font-size:calc(2.5vw + 0.9vh);
     font-family:"Audiowide";
-    padding:3vw 1vw;;
+    padding:2.3vw 1vw;;
 }
 .login_section input{
     border:0.5vw solid black;
