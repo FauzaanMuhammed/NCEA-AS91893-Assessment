@@ -14,7 +14,7 @@
                <a href="#about_us">About us</a>
                <a href="#chalet_info">Chalets</a>
                <a href="#gallery">Gallery</a>
-               <a href="#membership">Membership</a>
+               <a href="#membership" class="membership_link">Membership</a>
         </div>
    </header>
    <body>
@@ -66,13 +66,14 @@
 
         <div class="intro_box" id="gallery">Gallery</div>
 
-        <div style="text-align: center;"> 
+        <div style="text-align: center;margin-bottom:2vw;"> 
             <img src="Maunga Images/Maunga Club Images/maunga_club_cabin.jpg" class="side_gallery_image" id="img1">
             <img src="Maunga Images/Maunga Club Images/kereru/kitchen.jpg" class="gallery_image">  
             <img src="Maunga Images/Maunga Club Images/kereru/adult_bedroom.jpg" class="side_gallery_image" id="img2">
         </div>
-        <div class="intro_box" id="membership">Membership</div>
-
+    <div style="background-color:black; padding-top:1vw;padding-bottom:5vw;width:102%"id="membership">
+        <div class="intro_box" style="box-shadow:0px 0px 50px cyan;" >Membership</div>
+    
         <div class="membership_form">
             <div class="login_section">
                 <b>Full Name</b>
@@ -98,7 +99,7 @@
             </div>
             
         </div>
-
+    </div>   
         <script>
     /*function for smooth link jumping, whenever the user clicks a link.*/
             $(document).on('click', 'a[href^="#"]', function (event) { 
@@ -107,6 +108,10 @@
                      scrollTop: $($.attr(this, 'href')).offset().top 
                  }, 900,"linear");
             });   
+            /*Makes body black when the membership button is pressed*/
+            $(".membership_link").on("click",function(){
+                $("body").css("background-color","black")
+            })
            /*This will make the 5.5 kilometers turn into 3.4 miles when hovered over.*/
             $(".ski_kilometers").on("mouseover",function(){
                 $(".ski_kilometers").text("3.4 square miles")
@@ -136,6 +141,13 @@
             else{$("#img2").attr("src",img_src_list[x+1])  /*otherwise, display the image the gallery image will become next.*/
                  $("#img2").attr("alt",img_alt_list[x+1])}
         }, 3000);
+
+        $("#membership").on("mouseover",function(){
+            $("body").css("background-color","black")
+        })
+        $("#membership").on("mouseleave",function(){
+            $("body").css("background-color","white")
+        })
 
         $(".membership_sub_button").on("click",function(){
             error_string="" /*This will be tracking the errors if an input is empty, and if nothing is added to it, it will stay empty.*/

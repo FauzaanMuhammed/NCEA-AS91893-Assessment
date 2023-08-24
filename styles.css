@@ -1,5 +1,6 @@
 body{
     background-color: whitesmoke;
+    transition:1s;
 }
 html{
     overflow-x:hidden; /*hides the horizontal scrollbar*/
@@ -11,7 +12,7 @@ html{
     background: #7ed8df; /* Make the scrollbar tracker light-blue, to fit the cold and cozy theme */
   }
 ::-webkit-scrollbar-track{
-    background: #ffffff;
+    background: white;
 }
 h1{
     margin:0vw;
@@ -66,7 +67,7 @@ h1{
     width:calc(47vw + 10vh);
     height:calc(15vw + 5vh);
     position: absolute; /*Positon absolute is used to accurately place the logo image*/
-    top:25%;
+    top:18%;
     left:24%;
 }
 
@@ -76,7 +77,7 @@ font-size:calc(3vw + 0.5vh);
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 position:absolute;
 left:26.5vw;
-top:52vh;
+top:45vh;
 } 
 
 .about_us{
@@ -164,23 +165,25 @@ top:52vh;
     border:0.4vw solid black;
 }
 .membership_form{
-    border:2vw solid black;
+    box-shadow:0px 0px 50px cyan;
     width:65%;
-    height:calc(30vw + 20vh);
+    height:calc(28.69vw + 8vh);
     margin-left:15%;
     background-color:#affaff;
 }
 .login_section{
     font-size:calc(2.5vw + 0.9vh);
     font-family:"Audiowide";
-    padding:2.3vw 1vw;;
+    padding:1.5vw 1vw;;
+    text-shadow:0px 0px 10px rgb(1, 172, 141);;
 }
 .login_section input{
     border:0.5vw solid black;
     font-weight:bolder;
-    font-size:calc(2.4vw + 0.2vh);
+    font-size:calc(1.8vw + 0.2vh);
     width:33%;
     float:right;
+    box-shadow:0px 0px 10px rgb(0, 172, 172);
 }
 .membership_sub_button{
     border:0.5vw solid black;
