@@ -27,7 +27,7 @@
             <div class="boxed_info">
                 <h1>Skiing</h1>
                 <img src="Maunga Images/Maunga Club Images/kakapo/cabin_view.jpg" class="about_us_image" alt="Kakapo Cabin View">
-                We have <span class="ski_kilometers" style="text-decoration: underline;font-weight: 900;">5.5 square kilometers</span> of skiing and snowboarding area, the largest in New Zealand.
+                We have <span class="ski_kilometers" style="text-decoration: underline;font-weight: 900;">5.5 square kilometers</span>(3.4 miles) of skiing and snowboarding area, the largest in New Zealand.
             </div>
             
             <div class="boxed_info">
@@ -108,24 +108,20 @@
                      scrollTop: $($.attr(this, 'href')).offset().top 
                  }, 900,"linear");
             });   
-            /*Makes body black when the membership button is pressed*/
+            /*Makes body black when the membership button is pressed, and the background white, when other links are pressed, resetting this*/
+            $("a").on("click",function(){
+                $("body").css("background-color","white")
+            })
             $(".membership_link").on("click",function(){
                 $("body").css("background-color","black")
             })
-           /*This will make the 5.5 kilometers turn into 3.4 miles when hovered over.*/
-            $(".ski_kilometers").on("mouseover",function(){
-                $(".ski_kilometers").text("3.4 square miles")
-            })
-            $(".ski_kilometers").on("mouseout",function(){
-                $(".ski_kilometers").text("5.5 square kilometers")
-            })
-            
+            /*Code for gallery slideshow*/
            img_src_list=["Maunga Images/Maunga Club Images/maunga_club_cabin.jpg","Maunga Images/Maunga Club Images/pukeko/bathroom.jpg","Maunga Images/Maunga Club Images/kereru/adult_bedroom.jpg",
            "Maunga Images/Maunga Club Images/kereru/kids_bedroom.jpg","Maunga Images/Maunga Club Images/kereru/kitchen.jpg","Maunga Images/Maunga Club Images/kakapo/hallway.jpg"]
 
            img_alt_list=["Club cabin with christmas decorations","Club bathroom","Kereru cabin adult bedroom","Kereru cabin kids bedroom","Club kitchen","Kakapo cabin hallway"]
             x=0    /*x is the counter, and will dictate what images appear*/
-        setInterval(function() { /*A setInterval function fires 1 time every specific milliseconds. In this case, it is 3000, or 3 seconds, as defined in line 132*/
+        setInterval(function() { /*A setInterval function fires 1 time every specific milliseconds. In this case, it is 3000, or 3 seconds, as defined in line 136  */
             if (x+1<img_src_list.length){x+=1}/*If x is NOT greater than the list length, increase it, as the number is still within the list_length*/
             else{x=0}/*otherwise, reset x to 0*/
             $(".gallery_image").attr("src",img_src_list[x]) /*after these changes have been done, change the gallery image to xth index of the array, including the alt as well*/

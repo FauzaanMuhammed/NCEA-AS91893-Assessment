@@ -28,7 +28,7 @@ h1{
     margin-right:1vw;
     position: fixed; /*fixed, so it stays in the webite no matter how far the user has scrolled.*/
     top:0;
-    left:16.9vw;
+    left:15vw;
     z-index:69420;
     transition:200ms;
 }
@@ -38,7 +38,7 @@ h1{
 }
 .header_links a{
     color:black;
-    font-size:calc(1.15vw + 0.5vh);
+    font-size:calc(1.6vw + 0.5vh);
     padding-left:1vw;
     padding-right:1vw;
     text-decoration: none;
@@ -122,9 +122,6 @@ top:45vh;
     border-top:0.75vw solid black;
     border-bottom:0.75vw solid black;
 }
-.ski_kilometers:hover{
-    font-size:calc(2vw + 1.4vh);
-}
 .chalet_heading{
     font-size:calc(3vw + 0.3vh);
     font-weight: 900;
@@ -169,13 +166,25 @@ top:45vh;
     width:65%;
     height:calc(28.69vw + 8vh);
     margin-left:15%;
-    background-color:#affaff;
+    background-color:rgb(163, 255, 255);
+    animation:membership_section_glow 1s infinite linear;
+}
+@keyframes membership_section_glow{
+    0%{
+        box-shadow:0px 0px 30px cyan;
+    }
+    50%{
+        box-shadow:0px 0px 90px aqua;
+    }
+    100%{
+        box-shadow:0px 0px 30px cyan;
+    }
 }
 .login_section{
     font-size:calc(2.5vw + 0.9vh);
     font-family:"Audiowide";
     padding:1.5vw 1vw;;
-    text-shadow:0px 0px 10px rgb(1, 172, 141);;
+    text-shadow:0px 0px 10px aqua;
 }
 .login_section input{
     border:0.5vw solid black;
@@ -186,15 +195,19 @@ top:45vh;
     box-shadow:0px 0px 10px rgb(0, 172, 172);
 }
 .membership_sub_button{
+    background-color: aqua;
     border:0.5vw solid black;
+    box-shadow:0.1vw 0.1vw 1vw aqua;
     font-weight:bolder;
     font-size:2vw;
+    transition:300ms;
     width:calc(17vw + 5vh);
     height:calc(3vw + 1vh);
-    margin-left:30%;
+    margin-left:35%;
 }
 .membership_sub_button:hover{
     cursor:pointer;
-    background-color:rgb(219, 219, 219);
+    transition:300ms;
+    box-shadow:0.1vw 0.1vw 5vw aqua;
 }
 
