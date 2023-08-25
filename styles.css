@@ -28,7 +28,7 @@ h1{
     margin-right:1vw;
     position: fixed; /*fixed, so it stays in the webite no matter how far the user has scrolled.*/
     top:0;
-    left:15vw;
+    left:14vw;
     z-index:69420;
     transition:200ms;
 }
@@ -60,7 +60,7 @@ h1{
     left:0px;
     top:0px;
     z-index:-1; /*Makes other smaller images appear over this one, so they aren't overlapped*/
-    opacity:70%; /*allows the logo to be seen more clearly*/
+    opacity:60%; /*allows the logo to be seen more clearly*/
 }
 
 .logo_image{
@@ -77,7 +77,7 @@ font-size:calc(3vw + 0.5vh);
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 position:absolute;
 left:26.5vw;
-top:45vh;
+top:49vh;
 } 
 
 .about_us{
