@@ -19,23 +19,25 @@ h1{
     font-size:4vw;
 }
 .header_links{
-    margin-left:2vw;
+    margin-left:2vw; /*Margin-left is used to seperate the link text from touching the corner of the blue background*/
     font-family:monospace;
-    border-bottom:0.75vw solid black;
+    border-bottom:0.75vw solid black; /*Borders give the div it's unique look*/
     border-left:0.75vw solid black;
     border-right:0.75vw solid black;
     background-color:rgb(172, 219, 236);
-    margin-right:1vw;
+    margin-right:1vw; 
     position: fixed; /*fixed, so it stays in the webite no matter how far the user has scrolled.*/
     top:0;
-    left:calc(17vw - 8.3vh);
-    z-index:69420;
-    transition:200ms;
+    left:calc(17vw - 8.3vh); /*I've used Calc in such a way that  */
+    z-index:69420; /*makes the header links to appear over everything*/
+    transition:200ms; /*Makes it so there is a smooth transition when the header links are changing back to the default color, from :hover*/
 }
+/*when the header links are hovered over, change the cover's background color to a darker shade of blue*/
 .header_links:hover{
-    background-color:rgb(140, 208, 233);
+    background-color:rgb(140, 208, 233); 
     transition:200ms;
 }
+/*gives each link it's padding, so they are seperated from eachother.*/
 .header_links a{
     color:black;
     font-size:calc(1.6vw + 1vh);
@@ -47,14 +49,14 @@ h1{
     transition: 200ms;
 }
 
-
+/*darkening text shadow effect on hover.*/
 .header_links a:hover{  
     text-shadow:1px 1px 1px black;
     transition: 200ms;
 }
-
+/*the home page image, that takes up 100% of the screen*/
 .home_page_image{
-    width:100vw;
+    width:100vw; /*100vw and 100vh is 100% of the screen*/
     height:100vh;
     position:absolute; /*Makes the image use up no whitespace, as it has 0px left/top. This makes the image neater*/
     left:0px;
@@ -62,130 +64,144 @@ h1{
     z-index:-1; /*Makes other smaller images appear over this one, so they aren't overlapped*/
     opacity:60%; /*allows the logo to be seen more clearly*/
 }
-
+/*smaller white logo image*/
 .logo_image{
-    width:calc(47vw + 10vh);
+    width:calc(47vw + 10vh); /*a combination of vw and vh makes the image responsive*/
     height:calc(15vw + 5vh);
     position: absolute; /*Positon absolute is used to accurately place the logo image*/
     top:18%;
     left:24%;
 }
-
+/*Text that says 'see you at the winter wonderland!'*/
 .quote{
 color:rgb(0, 0, 0);
 font-size:calc(3vw + 0.5vh);
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-position:absolute;
+position:absolute; /*position absolute is used to accurately place the image.*/
 left:26.5vw;
 top:calc(49vh + 75px);
 } 
-
+/*.about_us, and the 106vh margin top is used to seperate the homepage image from the about us section*/
 .about_us{
     margin-top:106vh;
 }
+/*Intro boxes, have lots of detail to give them the unique look.*/
 .intro_box{
-    margin-top:calc(2vh + 5vw);
-    margin-left:33vw;
-    margin-bottom:3vw;
+    margin-top:calc(2vh + 5vw); /*Seperates from other elements, creating neatness*/
+    margin-left:33vw; /*Ensures that the intro box is 33% to the right of the screen, meaning it will be centered.*/
+    margin-bottom:3vw;/*neatness*/
     text-align: center;
-    width:30vw;
+    width:30vw;/*vw is instead of px used for responsive*/
     height:5vw;
     background-color:#affaff;
-    box-shadow:0.3vw 0.3vw black;
-    border:0.4vw solid black;
-    font-weight:900;
-    font-size:calc(3.8vw + 0.5vh);
+    box-shadow:0.3vw 0.3vw black; /*the box shadow is used for the "pastel shadow" effect in the bottom right of the box*/
+    border:0.4vw solid black;/*Border fully surrounds the box*/
+    font-weight:900;/*Ensures that the text is fully bold*/
+    font-size:calc(3.8vw + 0.5vh);/*responsive text*/
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*the first row/container of div boxes*/
 .info{
-    display:flex;
+    display:flex;/*used to keep the info divs in the same line next to eachother.*/
     margin-top:4vh;
-    margin-bottom:15vh;
+    margin-bottom:calc(3vw + 5vh);/*seperates the element below this one, for neatness*/
+    margin-left:0.369vw;/*seperates the first intro_box from touching the left edge of the screen*/
     width:101%;
-    gap:2vw;
+    gap:2vw; /*a 2vw gap in between all the divs*/
     text-align: center;
 }
+/*image for each .info image*/
 .info img{
+    width:100%;
     height:17vw;
+    border-top:0.75vw solid black;
+    border-bottom:0.75vw solid black;
 }
+/*style for each of the div boxes of the first row calc() is used for responsive reasons*/
 .boxed_info{
     border:0.75vw solid black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:calc(1.3vw + 2.1vh);
     width: 30%;
     background-color:#bceaff;
-    height:calc(20vw + 38vh);
+    height:calc(19vw + 40vh);
 }
-.about_us_image{ 
-    width:100%;
-    height:28vw;
-    border-top:0.75vw solid black;
-    border-bottom:0.75vw solid black;
-}
+/*The bird-name headings*/
 .chalet_heading{
     font-size:calc(3vw + 0.3vh);
     font-weight: 900;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*the chalet_box container*/
 .chalet_info{
+    margin-left:0.369vw;
     margin-top:6.9vh;
     display: flex;
     width:120%;
     gap:1vw;
 }
+/*controls each chalet box*/
 .chalet_box{
     border:0.75vw solid black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:calc(1.15vw + 2.1vh);
     width:26%;
     background-color:#bceaff;
-    height:calc(14vw + 52vh);
+    height:calc(12vw + 55vh);
     text-align: center;
 }
+/*gives each p tag in chalet_box a smaller margin, so they take us less space.*/
 .chalet_box p{
     margin:0.1em;
 }
+/*styles each chaletbox image*/
 .chalet_box img{
     height:18vw;
     border-bottom:1vw solid black;
     width:100%;
 }
+/*main gallery image, with solid black border*/
 .gallery_image{
     width:calc(43vw + 5vh);
     height:calc(28vw + 5vh);
     border:1vw solid black;
 }
+/*side gallery images*/
 .side_gallery_image{
     width:20vw;
     height:12vw;
     opacity:70%;
     border:0.4vw solid black;
 }
+/*The membership form background.*/
 .membership_form{
     box-shadow:0px 0px 50px cyan;
     width:65%;
     height:calc(18vw + 45vh);
     margin-left:15%;
     background-color:rgb(163, 255, 255);
-    animation:membership_section_glow 1s infinite linear;
+    animation:membership_section_glow 1s infinite linear; /*linear makes the animation more smooth and fluid*/
 }
+/*animates the membership form  glow. */
 @keyframes membership_section_glow{
     0%{
-        box-shadow:0px 0px 30px cyan;
+        box-shadow:0px 0px 30px cyan; /*start at a 30px shadow, with 0px of shadow displacement*/
     }
     50%{
-        box-shadow:0px 0px 90px aqua;
+        box-shadow:0px 0px 90px aqua; /*At 50%, peak at 90px of shadow*/
     }
     100%{
-        box-shadow:0px 0px 30px cyan;
+        box-shadow:0px 0px 30px cyan; /*at 100%, go back to 30px for a smooth transition into the next animation*/
     }
 }
+/*login form with custom 'audiowave' font imported from google on main.html*/
 .login_section{
     font-size:calc(2.5vw + 0.9vh);
     font-family:"Audiowide";
-    padding:calc(5vh) 1vw;;
+    padding:5vh 1vw;
     text-shadow:0px 0px 10px aqua;
 }
+/*The text inputs, which have "float:right;" in order to make them stick to the right of the form*/
 .login_section input{
     border:0.5vw solid black;
     font-weight:bolder;
@@ -194,10 +210,11 @@ top:calc(49vh + 75px);
     float:right;
     box-shadow:0px 0px 10px rgb(0, 172, 172);
 }
+/*The form submit button, with an aqua glow*/
 .membership_sub_button{
     background-color: aqua;
     border:0.5vw solid black;
-    box-shadow:0.1vw 0.1vw 1vw aqua;
+    box-shadow:0.1vw 0.1vw 1vw aqua; /*3rd size parameter creates a "glow" effect*/
     font-weight:bolder;
     font-size:calc(1.25vw + 1.25vh);
     transition:300ms;
@@ -205,11 +222,13 @@ top:calc(49vh + 75px);
     height:calc(3vw + 1vh);
     margin-left:35%;
 }
+/*on hover, make the submit button have a bigger glow and a pointer cursor*/
 .membership_sub_button:hover{
     cursor:pointer;
     transition:300ms;
     box-shadow:0.1vw 0.1vw 5vw aqua;
 }
+/*footer with contact us page*/
 footer{
     color:whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
