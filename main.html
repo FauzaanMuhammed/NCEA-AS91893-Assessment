@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
        <link rel="stylesheet" href="styles.css"><!--Links to styles.css, and makes the code look more neat-->
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"><!--This is a custom google font that will be used for the membership form text-->
+       <link rel="stylesheet" href="normalize.css">
        <title>Maunga club website</title>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!--This is the Script source for jquery, which will be used later for gallery and forms-->
        <script src="scripts.js"></script>
@@ -28,19 +29,19 @@
             <div class="boxed_info">
                 <h1>Skiing</h1>
                 <img src="Maunga Images/Maunga Club Images/kakapo/cabin_view.jpg" class="about_us_image" alt="Kakapo Cabin View">
-                We have <span class="ski_kilometers" style="text-decoration: underline;font-weight: 900;">5.5 square kilometers</span>(3.4 miles) of skiing and snowboarding area, the largest in New Zealand.
+                <section>we have <span class="ski_kilometers" style="text-decoration: underline;font-weight: 900;">5.5 square kilometers</span>(3.4 miles) of skiing and snowboarding area, the largest in New Zealand. Ski at your own safety!</section>
             </div>
             
             <div class="boxed_info">
                 <h1> Chalets</h1>
                 <img src="Maunga Images/Maunga Club Images/kakapo/bunk_room.jpg" class="about_us_image" alt="kakapo cabin bunk room">
-                Our club include 3 <a href="#chalet_info" style="color:black;font-weight:900;">chalets</a> for you to stay in, which are all right next to the skiing and snowboarding mountains. 
+                <section>Our club include 3 <a href="#chalet_info" style="color:black;font-weight:900;">chalets</a> for you to stay in, which are all right next to the skiing and snowboarding mountains.</section>
             </div>
 
             <div class="boxed_info">
                 <h1>Membership</h1>
                 <img src="Maunga Images/Maunga Club Images/maunga_club_cabin.jpg" class="about_us_image" alt="cabin with christmas decorations">
-                We have a very simple <a href="#membership" style="color:black;font-weight:900;">membership</a> process. Members are able to book the chalets from Friday to Sunday. 
+                <section>We have a very simple <a href="#membership" style="color:black;font-weight:900;">membership</a> process. Members are able to book the chalets from Friday to Sunday. </section>
             </div>
         
         </div>
@@ -72,7 +73,7 @@
             <img src="Maunga Images/Maunga Club Images/kereru/kitchen.jpg" class="gallery_image">  
             <img src="Maunga Images/Maunga Club Images/kereru/adult_bedroom.jpg" class="side_gallery_image" id="img2">
         </div>
-    <div style="background-color:black; padding-top:1vw;padding-bottom:5vw;width:102%"id="membership">
+    <div style="background-color:black; padding-top:1vw;padding-bottom:5vw;width:102%" id="membership">
         <div class="intro_box" style="box-shadow:0px 0px 50px cyan;" >Membership</div>
     
         <div class="membership_form">
@@ -98,9 +99,11 @@
             <div class="login_section">
                 <button class="membership_sub_button">Submit</button>
             </div>
-            
+            <footer>
+                For any inquiries, contact us at maungaclub@maungaclub.maungaclub
+            </footer>
         </div>
-    </div>   
+    </div>
+    <script src="scripts.js"></script>   
    </body>
-   <script src="scripts.js"></script>
 </html>
