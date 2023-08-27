@@ -11,7 +11,6 @@
         })
         $(".membership_link").on("click",function(){
             $("body").css("background-color","black")
-            $("")
         })
         /*Code for gallery slideshow*/
        img_src_list=["Maunga Images/Maunga Club Images/maunga_club_cabin.jpg","Maunga Images/Maunga Club Images/pukeko/bathroom.jpg","Maunga Images/Maunga Club Images/kereru/adult_bedroom.jpg",
