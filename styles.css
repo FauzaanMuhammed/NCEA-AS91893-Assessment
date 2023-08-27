@@ -114,7 +114,7 @@ top:calc(49vh + 75px);
     font-size:calc(1.3vw + 2.1vh);
     width: 30%;
     background-color:#bceaff;
-    height:calc(22vw + 40vh);
+    height:calc(20vw + 38vh);
 }
 .about_us_image{ 
     width:100%;
@@ -139,7 +139,7 @@ top:calc(49vh + 75px);
     font-size:calc(1.15vw + 2.1vh);
     width:26%;
     background-color:#bceaff;
-    height:calc(16vw + 50vh);
+    height:calc(14vw + 52vh);
     text-align: center;
 }
 .chalet_box p{
